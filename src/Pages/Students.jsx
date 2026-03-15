@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
+import StudentList from "../Components/StudentList";
 
 function Students() {
 
   const [students, setStudents] = useState([]);
 
   useEffect(() => {
-
     const studentData = [
     { id: 1, name: "Rhuzl", course: "BSIT" },
     { id: 2, name: "Cyrus", course: "BSCS" },
@@ -18,23 +18,13 @@ function Students() {
     { id: 9, name: "Aldrich", course: "BSA" },
     { id: 10, name: "Daisy", course: "BSCE" }
   ];
-      setStudents(studentData);
 
+    setStudents(studentData);
   }, []);
 
   return (
     <div>
-      <h1>Student List</h1>
-
-      {students.map((student) => (
-        <div key={student.id}>
-          <p>ID: {student.id}</p>
-          <p>Name: {student.name}</p>
-          <p>Course: {student.course}</p>
-          <hr />
-        </div>
-      ))}
-
+      <StudentList students={students} />
     </div>
   );
 }
