@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import StudentList from "../Components/StudentList";
+import "../Pages/Students.css";
 
 function Students() {
 
@@ -23,8 +24,20 @@ function Students() {
   }, []);
 
   return (
-    <div>
-      <StudentList students={students} />
+    <div className="students-page">
+      <h1 className="title">Student List</h1>
+
+      <div className="student-container">
+        {students.map((student) => (
+          <StudentList
+            key={student.id}
+            id={student.id}
+            name={student.name}
+            course={student.course}
+          />
+        ))}
+      </div>
+
     </div>
   );
 }
