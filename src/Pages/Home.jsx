@@ -1,3 +1,5 @@
+import React from "react";
+
 const Home = () => {
 <div>
 <h2>Welcome to Student Dashboard</h2>

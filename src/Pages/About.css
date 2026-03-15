@@ -1,0 +1,25 @@
+.about-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.about-card {
+  padding: 30px;
+  width: 400px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+}
+
+.about-card h2 {
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.about-card p {
+  font-size: 18px;
+  color: #555;
+}
