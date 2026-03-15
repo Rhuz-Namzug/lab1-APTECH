@@ -6,6 +6,7 @@ import Navigation from "./Components/Navigation";
 import Home from "./Pages/Home";
 import Students from "./Pages/Students";
 import About from "./Pages/About";
+import StudentDetail from "./Pages/StudentDetails";
 
 function App() {
   return (

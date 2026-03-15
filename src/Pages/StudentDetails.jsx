@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
-import "../Pages/StudentDetail.css";
+import "../Pages/StudentDetails.css";
 
 function StudentDetail() {
 
